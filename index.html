@@ -1,0 +1,327 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lou Bank</title>
+    <link href="./assets/css/tailwind.css" rel="stylesheet">    
+</head>
+<body class="bg-mainBg">
+    <!-- NAV BAR -->
+    <section class="h-24 w-full p-4 flex flex-col justify-end relative">
+        <nav >
+            <div class="rounded-full h-8 w-8 bg-gray-300 bg-profile bg-no-repeat bg-cover bg-center"></div>
+            <div class="h-10 w-full absolute left-0 right-0 top-11 flex justify-center items-center">
+                <div>
+                    <svg width="72" height="22" viewBox="0 0 72 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.30094 15.8027H3.75504V5.31738H1.10074V18H9.30094V15.8027ZM15.558 18.2021C18.4057 18.2021 20.225 16.3828 20.225 13.2803C20.225 10.2217 18.3793 8.37598 15.558 8.37598C12.7368 8.37598 10.8911 10.2305 10.8911 13.2803C10.8911 16.374 12.7104 18.2021 15.558 18.2021ZM15.558 16.2422C14.2924 16.2422 13.4926 15.1787 13.4926 13.2891C13.4926 11.417 14.31 10.3359 15.558 10.3359C16.8061 10.3359 17.6147 11.417 17.6147 13.2891C17.6147 15.1787 16.8149 16.2422 15.558 16.2422ZM30.9734 8.57812H28.407V13.9746C28.407 15.2227 27.695 16.04 26.5525 16.04C25.4187 16.04 24.7946 15.3721 24.7946 14.1152V8.57812H22.2282V14.6514C22.2282 16.8486 23.5818 18.1758 25.6208 18.1758C27.0446 18.1758 27.9763 17.4902 28.4421 16.3037H28.4948V18H30.9734V8.57812Z" fill="#EEFC79"/>
+                        <path d="M38.3027 18C40.9834 18 42.5918 16.6816 42.5918 14.5195C42.5918 12.7617 41.3701 11.5752 39.6123 11.3643V11.3027C40.9658 11.0566 41.9326 9.85254 41.9326 8.44629C41.9326 6.57422 40.4561 5.31738 38.2764 5.31738H33.7148V18H38.3027ZM34.9102 6.38086H38.0215C39.709 6.38086 40.7197 7.19824 40.7197 8.57812C40.7197 10.0723 39.5947 10.9512 37.6699 10.9512H34.9102V6.38086ZM34.9102 16.9365V11.9883H37.9775C40.166 11.9883 41.3613 12.876 41.3613 14.458C41.3613 16.0312 40.21 16.9365 38.1357 16.9365H34.9102ZM47.7942 17.1475C46.555 17.1475 45.7024 16.4619 45.7024 15.4688C45.7024 14.458 46.5022 13.834 47.9436 13.7373L50.6507 13.5527V14.5635C50.6507 16.0137 49.3938 17.1475 47.7942 17.1475ZM47.5569 18.1494C48.9192 18.1494 50.1673 17.3936 50.677 16.2598H50.7034V18H51.8108V11.7422C51.8108 9.87891 50.5013 8.70996 48.4182 8.70996C46.3352 8.70996 44.9905 9.87012 44.8587 11.5049H45.9837C46.1858 10.3975 47.0471 9.73828 48.3919 9.73828C49.8157 9.73828 50.6507 10.5293 50.6507 11.8477V12.6387L47.803 12.8145C45.6936 12.9551 44.5247 13.9043 44.5247 15.4688C44.5247 17.0684 45.7552 18.1494 47.5569 18.1494ZM54.482 18H55.6421V12.5859C55.6421 10.8896 56.7056 9.74707 58.2877 9.74707C59.817 9.74707 60.6959 10.6611 60.6959 12.2607V18H61.856V12.0762C61.856 10.002 60.6255 8.70996 58.6216 8.70996C57.1451 8.70996 56.0728 9.43945 55.607 10.5469H55.5806V8.85938H54.482V18ZM65.784 13.1836V5.31738H64.6151V18H65.784V14.458L66.8036 13.5176L70.4598 18H71.8221L67.6385 12.8057L71.743 8.85938H70.3016L65.784 13.1836Z" fill="white"/>
+                        <path d="M44.5 2.99946C48.6667 1.49946 59.4 -0.600535 69 2.99946" stroke="#EEFC79"/>
+                        </svg>            
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- end of NAV BAR -->
+
+
+    <!-- BALANCE -->
+    <section class="p-4 flex justify-between items-center">
+        <div>
+            <h1 class="text-white mx-auto text-base">Your Balance</h1>
+            <h1 class="text-white text-3xl font-bold">$7,200</h1>
+        </div>
+
+        <div class="flex h-8 w-8 bg-[#3E3E3E] rounded-full justify-center items-center text-white p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+
+        </div>
+
+    </section>
+    <!-- end of BALANCE -->
+
+
+    <!-- ACCOUNT CARDS -->
+    <section class="snap-x flex w-full overflow-x-auto px-4">
+
+        <div class="snap-center flex-shrink-0">
+            <div class=" snap-center h-cardH w-cardW bg-gradient-to-t from-[#B2D0CE] to-[#EAEAEA] rounded-3xl px-4 py-6 flex flex-col justify-between my-4 mx-2">
+                <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.6127 5.94141L13.8848 16.0816H16.6483L18.3777 5.94141H15.6127Z" fill="#272A32"/>
+                    <path d="M11.5697 5.95135L8.863 12.8666L8.57442 11.8225C8.04061 10.5644 6.52521 8.75755 4.74609 7.61887L7.22107 16.0752L10.1453 16.0702L14.4974 5.94922L11.5697 5.95135Z" fill="#272A32"/>
+                    <path d="M7.52427 6.67732C7.36363 6.05965 6.89806 5.87555 6.32019 5.85352H2.03554L2 6.05538C5.33432 6.86426 7.54062 8.81325 8.45612 11.1567L7.52427 6.67732Z" fill="#272A32"/>
+                    <path d="M23.9799 7.88378C24.8841 7.86957 25.5394 8.06717 26.0483 8.27187L26.2978 8.38916L26.6717 6.19139C26.1244 5.98597 25.2665 5.76562 24.196 5.76562C21.4652 5.76562 19.5403 7.14101 19.5254 9.11203C19.5076 10.5684 20.8965 11.3816 21.9457 11.8671C23.0225 12.3646 23.3836 12.6809 23.3786 13.1252C23.3701 13.804 22.52 14.1153 21.726 14.1153C20.6193 14.1153 20.0315 13.9625 19.1238 13.5843L18.7677 13.4223L18.3789 15.6918C19.0257 15.9754 20.2191 16.2192 21.4581 16.232C24.3631 16.232 26.2509 14.873 26.2708 12.7669C26.2829 11.6147 25.5458 10.7355 23.9487 10.014C22.982 9.54348 22.3906 9.23073 22.3963 8.75592C22.3963 8.33442 22.8981 7.88378 23.9799 7.88378Z" fill="#272A32"/>
+                    <path d="M33.7646 5.95312H31.6294C30.9662 5.95312 30.4729 6.13367 30.1815 6.7947L26.0781 16.0876H28.9803C28.9803 16.0876 29.4537 14.838 29.561 14.5644C29.8787 14.5644 32.6984 14.5686 33.1 14.5686C33.1825 14.9226 33.437 16.0876 33.437 16.0876H36.0008L33.7646 5.95312ZM30.3564 12.4889C30.5838 11.9067 31.4574 9.65493 31.4574 9.65493C31.4425 9.68265 31.6827 9.06852 31.8256 8.68683L32.0118 9.5611C32.0118 9.5611 32.5414 11.9821 32.6522 12.4889H30.3564Z" fill="#272A32"/>
+                    </svg>
+                    
+                <div>
+                    <p class="text-xs">Salary</p>
+                    <p class="font-bold">$2,230</p>
+                </div>
+                <p class="text-xs">**6917</p>
+            </div>
+        </div>
+        
+        <div class="snap-center flex-shrink-0">
+            <div class="snap-center h-cardH w-cardW bg-gradient-to-t from-[#F1FE87] to-[#FCFFDF] rounded-3xl px-4 py-6 flex flex-col justify-between my-4 mx-2">
+                <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.6127 5.94141L13.8848 16.0816H16.6483L18.3777 5.94141H15.6127Z" fill="#272A32"/>
+                    <path d="M11.5697 5.95135L8.863 12.8666L8.57442 11.8225C8.04061 10.5644 6.52521 8.75755 4.74609 7.61887L7.22107 16.0752L10.1453 16.0702L14.4974 5.94922L11.5697 5.95135Z" fill="#272A32"/>
+                    <path d="M7.52427 6.67732C7.36363 6.05965 6.89806 5.87555 6.32019 5.85352H2.03554L2 6.05538C5.33432 6.86426 7.54062 8.81325 8.45612 11.1567L7.52427 6.67732Z" fill="#272A32"/>
+                    <path d="M23.9799 7.88378C24.8841 7.86957 25.5394 8.06717 26.0483 8.27187L26.2978 8.38916L26.6717 6.19139C26.1244 5.98597 25.2665 5.76562 24.196 5.76562C21.4652 5.76562 19.5403 7.14101 19.5254 9.11203C19.5076 10.5684 20.8965 11.3816 21.9457 11.8671C23.0225 12.3646 23.3836 12.6809 23.3786 13.1252C23.3701 13.804 22.52 14.1153 21.726 14.1153C20.6193 14.1153 20.0315 13.9625 19.1238 13.5843L18.7677 13.4223L18.3789 15.6918C19.0257 15.9754 20.2191 16.2192 21.4581 16.232C24.3631 16.232 26.2509 14.873 26.2708 12.7669C26.2829 11.6147 25.5458 10.7355 23.9487 10.014C22.982 9.54348 22.3906 9.23073 22.3963 8.75592C22.3963 8.33442 22.8981 7.88378 23.9799 7.88378Z" fill="#272A32"/>
+                    <path d="M33.7646 5.95312H31.6294C30.9662 5.95312 30.4729 6.13367 30.1815 6.7947L26.0781 16.0876H28.9803C28.9803 16.0876 29.4537 14.838 29.561 14.5644C29.8787 14.5644 32.6984 14.5686 33.1 14.5686C33.1825 14.9226 33.437 16.0876 33.437 16.0876H36.0008L33.7646 5.95312ZM30.3564 12.4889C30.5838 11.9067 31.4574 9.65493 31.4574 9.65493C31.4425 9.68265 31.6827 9.06852 31.8256 8.68683L32.0118 9.5611C32.0118 9.5611 32.5414 11.9821 32.6522 12.4889H30.3564Z" fill="#272A32"/>
+                    </svg>
+                    
+                <div>
+                    <p class="text-xs">Salary</p>
+                    <p class="font-bold">$5,566</p>
+                </div>
+                <p class="text-xs">** 4552</p>
+            </div>
+        </div>
+
+        <div class="snap-center flex-shrink-0">
+            <div class="snap-center h-cardH w-cardW bg-gradient-to-t from-[#B2D0CE] to-[#EAEAEA] rounded-3xl px-4 py-6 flex flex-col justify-between my-4 mx-2">
+                <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.6127 5.94141L13.8848 16.0816H16.6483L18.3777 5.94141H15.6127Z" fill="#272A32"/>
+                    <path d="M11.5697 5.95135L8.863 12.8666L8.57442 11.8225C8.04061 10.5644 6.52521 8.75755 4.74609 7.61887L7.22107 16.0752L10.1453 16.0702L14.4974 5.94922L11.5697 5.95135Z" fill="#272A32"/>
+                    <path d="M7.52427 6.67732C7.36363 6.05965 6.89806 5.87555 6.32019 5.85352H2.03554L2 6.05538C5.33432 6.86426 7.54062 8.81325 8.45612 11.1567L7.52427 6.67732Z" fill="#272A32"/>
+                    <path d="M23.9799 7.88378C24.8841 7.86957 25.5394 8.06717 26.0483 8.27187L26.2978 8.38916L26.6717 6.19139C26.1244 5.98597 25.2665 5.76562 24.196 5.76562C21.4652 5.76562 19.5403 7.14101 19.5254 9.11203C19.5076 10.5684 20.8965 11.3816 21.9457 11.8671C23.0225 12.3646 23.3836 12.6809 23.3786 13.1252C23.3701 13.804 22.52 14.1153 21.726 14.1153C20.6193 14.1153 20.0315 13.9625 19.1238 13.5843L18.7677 13.4223L18.3789 15.6918C19.0257 15.9754 20.2191 16.2192 21.4581 16.232C24.3631 16.232 26.2509 14.873 26.2708 12.7669C26.2829 11.6147 25.5458 10.7355 23.9487 10.014C22.982 9.54348 22.3906 9.23073 22.3963 8.75592C22.3963 8.33442 22.8981 7.88378 23.9799 7.88378Z" fill="#272A32"/>
+                    <path d="M33.7646 5.95312H31.6294C30.9662 5.95312 30.4729 6.13367 30.1815 6.7947L26.0781 16.0876H28.9803C28.9803 16.0876 29.4537 14.838 29.561 14.5644C29.8787 14.5644 32.6984 14.5686 33.1 14.5686C33.1825 14.9226 33.437 16.0876 33.437 16.0876H36.0008L33.7646 5.95312ZM30.3564 12.4889C30.5838 11.9067 31.4574 9.65493 31.4574 9.65493C31.4425 9.68265 31.6827 9.06852 31.8256 8.68683L32.0118 9.5611C32.0118 9.5611 32.5414 11.9821 32.6522 12.4889H30.3564Z" fill="#272A32"/>
+                    </svg>
+                    
+                <div>
+                    <p class="text-xs">Salary</p>
+                    <p class="font-bold">$2,230</p>
+                </div>
+                <p class="text-xs">** 6917</p>
+            </div>
+        </div>
+        
+    </section>
+    <!-- end of ACCOUNT CARDS -->
+
+    <!-- FINANCE -->
+
+    <div class="px-4 py-4 uppercase text-white text-xs flex-col">Finance</div>
+
+    <section class="flex flex-row w-full px-4">
+        <!-- Account types -->
+        <div class="h-sameH w-sameW bg-black rounded-2xl px-4 py-4 my-4 mx-2"> 
+            <!-- icon holder my bonuses-->
+           <div class ="h-6 w-6 bg-lyellow rounded justify-center items-center">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                </svg>
+            </div>
+                <p class="text-xs text-white py-4">My bonuses</p>
+            </div>
+           
+            <!-- My budget-->
+            <div class=" h-sameH w-sameW bg-black rounded-2xl px-4 py-4 my-4 mx-2 items-center justify-between"> 
+                <!-- icon holder my budget-->
+                <div class ="h-6 w-6 bg-lmint rounded justify-between items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black" class="w-5 h-5">
+                        <path fill-rule="evenodd" d="M2.5 4A1.5 1.5 0 001 5.5V6h18v-.5A1.5 1.5 0 0017.5 4h-15zM19 8.5H1v6A1.5 1.5 0 002.5 16h15a1.5 1.5 0 001.5-1.5v-6zM3 13.25a.75.75 0 01.75-.75h1.5a.75.75 0 010 1.5h-1.5a.75.75 0 01-.75-.75zm4.75-.75a.75.75 0 000 1.5h3.5a.75.75 0 000-1.5h-3.5z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <p class="text-xs text-white py-4">My budget</p>
+            </div>
+
+            <!-- Finance Analysis-->
+            <div class= "text-xs text-white py-4 h-sameH w-sameW bg-black rounded-2xl px-4 py-4 my-4 mx-2">
+            <!-- icon holder-->
+            <div class ="h-6 w-6 bg-lpurple rounded justify-between items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 012 10z" clip-rule="evenodd" />
+                </svg>
+            </div>
+                <p class ="text-xs text-white py-4">Finance Analysis</p>
+            </div>
+        </div>
+        
+    </section>
+    <!-- end of FINANCE -->
+
+
+    <!-- CURRENT LOANS -->
+    <section class="flex-col">
+    <div class ="h-boxH w-boxW bg-boxBg rounded-3xl py-2">
+        <div class="px-2"> 
+            <!-- top label -current loans  -->
+            <div class ="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+                <p class="text-sm px-4 text-white flex uppercase">current loans </p>
+                <div class ="h-6 w-6 bg-ldark rounded-full mx-60"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                </div>
+            </div>
+        <!-- Account details -->
+        <div class ="mx-2 my-4 text-xs text-white h-20 w-80 bg-black rounded-3xl flex justify-between items-center px-4 my-4">
+            <div class ="flex py-2">
+                <!-- icon - card holder-->
+                <div class ="h-6 w-6 bg-lmint rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                      </svg>
+                </div>    
+                <!-- account info-->
+                <div class = "px-4" >                  
+                    <p> Account N03874825</p>
+                    <div class ="text-grey">
+                      <p> Express 12/12/2-23 </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="text-xs text-white text-right">
+                <p> $78.90</p>
+                <p> Rate 3.5% </p>
+            </div>
+        </div>
+
+        <!-- Investment now-->
+        <div class ="h-20 w-80 bg-gray-300 my-4 rounded-3xl bg-gradient-to-t from-[#B2D0CE] to-[#EAEAEA] flex justify-between items-center px-4 mx-2 my-4">
+            <div class ="flex py-6">
+                <div class ="h-6 w-6 bg-black rounded ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="yellow" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                      </svg>
+                </div> 
+                <!--inner child element -->
+                <div class="px-2 ">                   
+                    <p class="text-black justify-between"> Start Investing Now!</p>
+                    <p class="text-xs text-black"> Protected savings and investments plans </p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                </div>
+            </div>
+
+            <div class ="flex text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+
+                <!-- Currencies and metals-->
+            <div class=" text-xs text-white flex px-2 uppercase">Currencies and Metals</div>
+            </div>
+
+            <div class=" flex h-28 w-80 bg-black rounded-3xl px-2 py-4 mx-2 my-4"> 
+                <div class ="flex-col text-sm text-white justify-between items center px-2">
+                    <!-- Currency columns-->
+                    <div><p>Currencies</p></div>
+                    <div>
+                        <div class="flex text-white justify-between items center px-2 py-2">
+                            <div class ="h-5 w-5 bg-lmint rounded">
+                                <svg width="14" height="18" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.9157 7.30566C5.86004 7.10941 5.79252 6.93861 5.71321 6.79357C5.63395 6.64838 5.52044 6.50676 5.37244 6.36823C5.22462 6.22978 5.09164 6.11827 4.97373 6.03351C4.85589 5.94867 4.69402 5.85382 4.4882 5.74883C4.28257 5.64387 4.11964 5.56576 3.9997 5.5144C3.87961 5.4631 3.70589 5.39278 3.47865 5.30349C3.27718 5.22318 3.12718 5.16178 3.02848 5.11939C2.9299 5.07696 2.80026 5.01673 2.63949 4.93855C2.47878 4.8605 2.35873 4.79126 2.27941 4.73102C2.2001 4.67079 2.11546 4.59714 2.02542 4.5101C1.93537 4.42306 1.87215 4.33041 1.83568 4.2322C1.79931 4.13398 1.78106 4.02681 1.78106 3.91073C1.78106 3.60722 1.90962 3.35937 2.16684 3.16746C2.42407 2.97555 2.75636 2.87955 3.16364 2.87955C3.3436 2.87955 3.52708 2.90519 3.71343 2.95658C3.89979 3.00797 4.0595 3.06586 4.19241 3.13064C4.32543 3.19542 4.45077 3.26687 4.5687 3.34495C4.68661 3.4231 4.77017 3.48221 4.81952 3.52238C4.86882 3.56259 4.90006 3.58935 4.91279 3.60277C4.9686 3.6474 5.02633 3.663 5.08635 3.64965C5.15063 3.6452 5.19998 3.60943 5.23435 3.54253L5.75531 2.56483C5.80673 2.47559 5.7961 2.39075 5.72317 2.31035C5.6974 2.28356 5.66537 2.25234 5.62652 2.2166C5.58805 2.18085 5.50442 2.11614 5.3757 2.02234C5.24712 1.92861 5.11101 1.8449 4.9675 1.77123C4.82382 1.69763 4.63728 1.62281 4.40791 1.54695C4.17867 1.47098 3.94175 1.41969 3.69733 1.39292V0.214285C3.69733 0.151825 3.67807 0.100458 3.6396 0.060256C3.60104 0.0201479 3.55172 0 3.4916 0H2.62343C2.5677 0 2.51948 0.0211799 2.47876 0.0636101C2.43804 0.10604 2.41768 0.156234 2.41768 0.214285V1.41966C1.7446 1.55354 1.19801 1.85267 0.777883 2.31696C0.357805 2.78128 0.147687 3.32138 0.147687 3.93752C0.147687 4.12054 0.165976 4.29464 0.202418 4.45974C0.238816 4.62498 0.283862 4.77343 0.337467 4.90511C0.391026 5.03688 0.467155 5.1663 0.565738 5.29357C0.664322 5.42079 0.75759 5.53018 0.845453 5.62166C0.93336 5.71311 1.04805 5.80801 1.18947 5.90619C1.33098 6.00447 1.45209 6.08377 1.55286 6.144C1.65365 6.20405 1.78759 6.27347 1.95474 6.35142C2.12193 6.42959 2.2538 6.48867 2.35027 6.52895C2.44673 6.56908 2.57854 6.62495 2.74579 6.69623C2.97726 6.78998 3.14878 6.86255 3.26022 6.91391C3.37176 6.96528 3.51318 7.0367 3.68476 7.12822C3.85618 7.21965 3.98152 7.30339 4.0609 7.37931C4.1402 7.45523 4.21198 7.54898 4.27633 7.66056C4.34068 7.77213 4.37291 7.89044 4.37291 8.0155C4.37291 8.3682 4.24108 8.64046 3.97736 8.83228C3.71375 9.02431 3.4082 9.12028 3.06101 9.12028C2.90253 9.12028 2.74379 9.10253 2.58523 9.06683C2.02792 8.95061 1.50707 8.67159 1.02264 8.22965L1.00978 8.21626C0.971177 8.16728 0.919711 8.14716 0.855476 8.15614C0.78687 8.16505 0.737545 8.19186 0.707566 8.23659L0.0452068 9.14055C-0.0191192 9.22982 -0.0147721 9.32132 0.0580901 9.41507C0.0795547 9.44188 0.117056 9.48215 0.170616 9.53563C0.224311 9.58931 0.323998 9.67288 0.469677 9.78695C0.615402 9.90084 0.774032 10.0078 0.945545 10.1084C1.11704 10.2088 1.33456 10.3081 1.59826 10.4064C1.86197 10.5045 2.13519 10.5736 2.41815 10.6138V11.7857C2.41815 11.8438 2.43853 11.894 2.47923 11.9364C2.51998 11.9789 2.56818 12 2.6239 12H3.49207C3.55219 12 3.60151 11.9799 3.64005 11.9398C3.67859 11.8997 3.69778 11.8483 3.69778 11.7857V10.6138C4.37953 10.4978 4.93362 10.193 5.36012 9.69972C5.78666 9.20639 6 8.61821 6 7.93522C5.99977 7.71204 5.97196 7.50221 5.9157 7.30566Z" fill="black"/>
+                                </svg>
+                            </div>
+                        <p class ="px-4">USD</p>
+                    </div>
+                    </div>
+                    <div>
+                        <div class="flex text-white justify-between items center px-2">
+                            <div class ="h-5 w-5 bg-lmint rounded">
+                                <svg width="14" height="24" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.66667 8.61112C5.275 8.61112 4.06667 7.82224 3.46388 6.66667H6.66667V5.55555H3.10279C3.075 5.375 3.05557 5.18888 3.05557 5C3.05557 4.81112 3.07503 4.625 3.10279 4.44445H6.66667V3.33333H3.46388C4.06667 2.17779 5.27221 1.38888 6.66667 1.38888C7.56388 1.38888 8.38333 1.71667 9.01388 2.25833L10 1.27779C9.11667 0.48612 7.94721 0 6.66667 0C4.49167 0 2.64445 1.39167 1.95833 3.33333H0V4.44445H1.7C1.67779 4.62779 1.66667 4.81112 1.66667 5C1.66667 5.18888 1.67779 5.37221 1.7 5.55555H0V6.66667H1.95833C2.64445 8.60833 4.49167 10 6.66667 10C7.94721 10 9.11667 9.51388 10 8.72221L9.01388 7.73888C8.38333 8.28055 7.56388 8.61112 6.66667 8.61112Z" fill="black"/>
+                                </svg>
+                                                                   
+                            </div>
+                        <p class="px-4">EUR</p>
+                    </div>
+                    </div>
+                </div>
+            
+                 <!-- Buy Column categories-->
+                <div class ="flex-col text-sm text-white justify-between items center px-8" >                      
+                    <div><p>Buy</p></div>
+                    <div class="py-2"><p>$78,92</p></div>
+                    <div><p>$78,92</p></div>
+                </div>
+                
+                <!-- Sell category-->
+                <div class ="flex-col text-sm text-white justify-between items center px-2">
+                    <div><p>Sell</p></div>
+                    <div class="py-2"><p>$78,92</p></div>
+                    <div><p>$78,92</p></div>
+                </div>
+            </div> <!--end currency category-->
+       
+        <!-- Metals category-->
+        <div class=" flex h-28 w-80 bg-black rounded-3xl px-2 py-4 mx-2 my-4"> 
+            <div class ="flex-col text-sm text-white justify-between items center px-2">
+                <!-- Currency columns-->
+                <div><p>Currencies</p></div>
+                <div>
+                    <div class="flex text-white justify-between items center px-2 py-2">
+                        <div class ="h-5 w-5 bg-lmint rounded">
+                            <svg width="15" height="19" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.45522 0H3.52577C3.30422 0 3.08267 0.110774 3.02729 0.332323L0.0363812 7.25571C-0.0190059 7.42188 -0.0190057 7.64342 0.0917685 7.7542C0.202543 7.92036 0.368704 8.03113 0.534866 8.03113H11.4461C11.7785 8.03113 12 7.80959 12 7.47726C12 7.36649 11.9446 7.25571 11.8892 7.14494L8.89832 0.276936C8.89832 0.110774 8.67677 0 8.45522 0ZM1.42106 6.92339L3.96887 1.10774H8.1229L10.6153 6.92339H1.42106Z" fill="black"/>
+                            </svg>
+                        </div>
+
+                    <p class="px-2">Gold</p>
+                </div>
+                </div>
+                <div>
+                    <div class="flex text-white justify-between items center px-2">
+                        <div class ="h-5 w-5 bg-lmint rounded">
+                            <svg width="15" height="19" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.45522 0H3.52577C3.30422 0 3.08267 0.110774 3.02729 0.332323L0.0363812 7.25571C-0.0190059 7.42188 -0.0190057 7.64342 0.0917685 7.7542C0.202543 7.92036 0.368704 8.03113 0.534866 8.03113H11.4461C11.7785 8.03113 12 7.80959 12 7.47726C12 7.36649 11.9446 7.25571 11.8892 7.14494L8.89832 0.276936C8.89832 0.110774 8.67677 0 8.45522 0ZM1.42106 6.92339L3.96887 1.10774H8.1229L10.6153 6.92339H1.42106Z" fill="black"/>
+                            </svg>
+                        </div>
+                        
+                    <p class ="px-2">Silver</p>
+                </div>
+                </div>
+            </div>
+        
+             <!-- Buy Column categories-->
+            <div class ="flex-col text-sm text-white justify-between items center px-8" >                      
+                <div><p>Buy</p></div>
+                <div class="py-2"><p>$78,92</p></div>
+                <div><p>$78,92</p></div>
+            </div>
+            
+            <!-- Sell category-->
+            <div class ="flex-col text-sm text-white justify-between items center px-2">
+                <div><p>Sell</p></div>
+                <div class ="py-2"><p>$78,92</p></div>
+                <div><p>$78,92</p></div>
+            </div>
+        </div>
+    </div> <!-- end of metals and currency-->
+
+        <!-- Bottom nav begins-->
+        <div class=" bg-black w-boxW h-20 rounded-3xl py-6 my-4 flex justify-between items center px-4 mx-1"> 
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+    </section>
+    
+    <!-- end of BOTTOM NAV -->
+
+    </body>
+</html>
